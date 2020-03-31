@@ -1,0 +1,36 @@
+type Event {
+  token: String!
+  description: String!
+  participants: [Participant!]!
+  games: [Game!]!
+  tip: Tip
+}
+
+type Participant {
+  id: Int!
+  name: String!
+}
+
+type Game {
+  id: Int!
+  results: [GameResult!]!
+}
+
+type GameResult {
+  participantId: Int!
+  rank: Int!
+  score: Float!
+}
+
+type Tip {
+  results: [TipResult!]!
+}
+
+type TipResult {
+  participantId: Int!
+  score: Float!
+}
+
+type Query {
+  getEvent(token: String!): Event
+}
