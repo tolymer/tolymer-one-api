@@ -74,6 +74,7 @@ GEM
     ffi (1.13.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    graphql (1.10.10)
     i18n (1.8.3)
       concurrent-ruby (~> 1.0)
     listen (3.2.1)
@@ -181,6 +182,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   factory_bot_rails
+  graphql
   listen
   pg
   pry-byebug
