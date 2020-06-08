@@ -10,9 +10,9 @@ class Game < ApplicationRecord
       game = create!(event_id: event_id)
       results.each do |result|
         game.results.create!(
-          participant_id: result.participant_id,
-          score: result.score,
-          rank: participant_by_rank[result.participant_id],
+          participant_id: result[:participant_id],
+          score: result[:score],
+          rank: participant_by_rank[result[:participant_id]],
         )
       end
       game
@@ -27,8 +27,8 @@ class Game < ApplicationRecord
 
   def self.calc_rank(results)
     participant_by_rank = {}
-    results.sort_by(&:score).reverse.each.with_index(1) do |r, rank|
-      participant_by_rank[r.participant_id] = rank
+    results.sort_by{|r| r[:score] }.reverse.each.with_index(1) do |r, rank|
+      participant_by_rank[r[:participant_id]] = rank
     end
     participant_by_rank
   end
@@ -41,9 +41,9 @@ class Game < ApplicationRecord
       self.results.destroy_all
       results.each do |result|
         self.results.create!(
-          participant_id: result.participant_id,
-          score: result.score,
-          rank: participant_by_rank[result.participant_id],
+          participant_id: result[:participant_id],
+          score: result[:score],
+          rank: participant_by_rank[result[:participant_id]],
         )
       end
     end

@@ -9,7 +9,7 @@ class Tip < ApplicationRecord
       tip = find_or_create_by!(event_id: event_id)
       tip.results.destroy_all
       results.each do |result|
-        tip.results.create!(participant_id: result.participant_id, score: result.score)
+        tip.results.create!(participant_id: result[:participant_id], score: result[:score])
       end
       tip
     end

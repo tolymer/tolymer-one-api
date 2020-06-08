@@ -7,7 +7,7 @@ class Event < ApplicationRecord
 
   before_create :set_token
 
-  def self.create_with_participants!(description:, participants:, event_date:)
+  def self.create_with_participants!(event_date:, participants:)
     participants = participants.reject(&:blank?)
 
     if participants.size != 4
@@ -15,7 +15,7 @@ class Event < ApplicationRecord
     end
 
     transaction do
-      event = create!(description: description, event_date: event_date)
+      event = create!(event_date: event_date)
 
       participants.each do |name|
         event.participants.create!(name: name.strip)

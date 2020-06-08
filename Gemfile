@@ -5,6 +5,7 @@ gem 'graphql'
 gem 'pg'
 gem 'ridgepole'
 gem 'puma'
+gem 'graphql_playground-rails'
 gem 'bootsnap', require: false
 
 group :development, :test do
