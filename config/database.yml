@@ -13,4 +13,4 @@ test:
 
 production:
   <<: *default
-  database: tolymer_one
+  url: <%= ENV['DATABASE_URL'] %>
