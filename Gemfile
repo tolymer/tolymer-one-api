@@ -8,6 +8,7 @@ gem 'pg'
 gem 'ridgepole'
 gem 'puma'
 gem 'graphql_playground-rails'
+gem 'rack-cors'
 gem 'bootsnap', require: false
 
 group :development, :test do
