@@ -14,3 +14,10 @@ $ bin/rails server
 ```
 $ bin/rspec
 ```
+
+
+## GraphQL Schema Dump
+
+```
+$ bin/rake graphql:schema:dump
+```
