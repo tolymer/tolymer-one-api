@@ -10,7 +10,7 @@ steps:
   - id: Migration
     name: gcr.io/cloud-builders/docker
     entrypoint: bash
-    args: ["-c", "run -e DATABASE_URL=$$_DATABASE_URL $_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA", "bundle", "exec", "rake", "ridgepole:apply"]
+    args: ["-c", "docker run -e \"DATABASE_URL=$$_DATABASE_URL\" $_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA bundle exec rake ridgepole:apply"]
     secretEnv: ["_DATABASE_URL"]
 
   - id: Deploy
@@ -27,7 +27,7 @@ steps:
       - '--region=$_DEPLOY_REGION'
       - '--quiet'
       - '--set-secrets'
-      - 'DATABASE_URL=projects/${PROJECT_ID}/secrets/DATABASE_URL/versions/latest,SECRET_KEY_BASE=projects/${PROJECT_ID}/secrets/SECRET_KEY_BASE/versions/latest'
+      - 'DATABASE_URL=projects/${PROJECT_NUMBER}/secrets/DATABASE_URL:latest,SECRET_KEY_BASE=projects/${PROJECT_NUMBER}/secrets/SECRET_KEY_BASE:latest'
 
 substitutions:
   _LABELS: gcb-trigger-id=41ea1912-295d-426e-96f3-8d615de115e5
