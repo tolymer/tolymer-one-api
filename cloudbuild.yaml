@@ -9,7 +9,7 @@ steps:
 
   - id: Migration
     name: gcr.io/cloud-builders/docker
-    args: ["run", "-e", "DATABASE_URL=$$_DATABASE_URL", "$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME:$COMMIT_SHA", "--", "bundle", "exec", "rake", "ridgepole:apply"]
+    args: ["run", "-e", "DATABASE_URL=$$_DATABASE_URL", "$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME:$COMMIT_SHA", "bundle", "exec", "rake", "ridgepole:apply"]
     secretEnv: ["_DATABASE_URL"]
 
   - id: Deploy
