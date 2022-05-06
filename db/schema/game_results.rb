@@ -1,4 +1,4 @@
-create_table 'game_results', force: :cascade do |t|
+create_table 'game_results', force: :cascade, collation: 'utf8mb4_general_ci' do |t|
   t.bigint  'game_id',        null: false
   t.bigint  'participant_id', null: false
   t.integer 'rank',           null: false

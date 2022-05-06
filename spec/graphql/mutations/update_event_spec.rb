@@ -4,7 +4,7 @@ RSpec.describe "update_event" do
   let(:event) { FactoryBot.create(:event, event_date: '2020-01-01') }
   let(:query) {
     <<~QUERY
-      mutation updateEvent($event_token: String!, $event_date: String!) {
+      mutation updateEvent($event_token: String!, $event_date: ISO8601Date!) {
         updateEvent(input: { eventToken: $event_token, eventDate: $event_date }) {
           event {
             token

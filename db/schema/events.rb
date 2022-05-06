@@ -1,4 +1,4 @@
-create_table 'events', force: :cascade do |t|
+create_table 'events', force: :cascade, collation: 'utf8mb4_general_ci' do |t|
   t.string 'token',       null: false
   t.date   'event_date',  null: false
 

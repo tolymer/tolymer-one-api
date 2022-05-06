@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe "create_event" do
   let(:query) {
     <<~QUERY
-      mutation createEvent($event_date: String!, $participants: [String!]!) {
+      mutation createEvent($event_date: ISO8601Date!, $participants: [String!]!) {
         createEvent(input: { eventDate: $event_date, participants: $participants }) {
           event {
             token

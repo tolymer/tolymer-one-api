@@ -1,4 +1,4 @@
-create_table 'tips', force: :cascade do |t|
+create_table 'tips', force: :cascade, collation: 'utf8mb4_general_ci' do |t|
   t.bigint  'event_id', null: false
 
   t.timestamps
