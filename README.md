@@ -9,6 +9,8 @@ $ bin/rake ridgepole:apply
 $ bin/rails server
 ```
 
+Open: http://localhost:3000/playground
+
 ## Test
 
 ```
