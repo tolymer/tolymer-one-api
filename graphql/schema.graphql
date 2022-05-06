@@ -117,14 +117,54 @@ An ISO 8601-encoded date
 scalar ISO8601Date
 
 type Mutation {
-  createEvent(input: CreateEventInput!): CreateEventPayload
-  createGame(input: CreateGameInput!): CreateGamePayload
-  deleteGame(input: DeleteGameInput!): DeleteGamePayload
-  deleteTip(input: DeleteTipInput!): DeleteTipPayload
-  updateEvent(input: UpdateEventInput!): UpdateEventPayload
-  updateGame(input: UpdateGameInput!): UpdateGamePayload
-  updateParticipants(input: UpdateParticipantsInput!): UpdateParticipantsPayload
-  upsertTip(input: UpsertTipInput!): UpsertTipPayload
+  createEvent(
+    """
+    Parameters for CreateEvent
+    """
+    input: CreateEventInput!
+  ): CreateEventPayload
+  createGame(
+    """
+    Parameters for CreateGame
+    """
+    input: CreateGameInput!
+  ): CreateGamePayload
+  deleteGame(
+    """
+    Parameters for DeleteGame
+    """
+    input: DeleteGameInput!
+  ): DeleteGamePayload
+  deleteTip(
+    """
+    Parameters for DeleteTip
+    """
+    input: DeleteTipInput!
+  ): DeleteTipPayload
+  updateEvent(
+    """
+    Parameters for UpdateEvent
+    """
+    input: UpdateEventInput!
+  ): UpdateEventPayload
+  updateGame(
+    """
+    Parameters for UpdateGame
+    """
+    input: UpdateGameInput!
+  ): UpdateGamePayload
+  updateParticipants(
+    """
+    Parameters for UpdateParticipants
+    """
+    input: UpdateParticipantsInput!
+  ): UpdateParticipantsPayload
+  upsertTip(
+    """
+    Parameters for UpsertTip
+    """
+    input: UpsertTipInput!
+  ): UpsertTipPayload
 }
 
 type Participant {

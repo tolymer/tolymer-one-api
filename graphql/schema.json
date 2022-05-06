@@ -26,6 +26,18 @@
           "fields": null,
           "inputFields": [
             {
+              "name": "clientMutationId",
+              "description": "A unique identifier for the client performing the mutation.",
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "eventDate",
               "description": null,
               "type": {
@@ -37,7 +49,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             },
             {
               "name": "participants",
@@ -59,17 +73,9 @@
                   }
                 }
               },
-              "defaultValue": null
-            },
-            {
-              "name": "clientMutationId",
-              "description": "A unique identifier for the client performing the mutation.",
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "interfaces": null,
@@ -128,6 +134,18 @@
           "fields": null,
           "inputFields": [
             {
+              "name": "clientMutationId",
+              "description": "A unique identifier for the client performing the mutation.",
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "eventToken",
               "description": null,
               "type": {
@@ -139,7 +157,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             },
             {
               "name": "results",
@@ -161,17 +181,9 @@
                   }
                 }
               },
-              "defaultValue": null
-            },
-            {
-              "name": "clientMutationId",
-              "description": "A unique identifier for the client performing the mutation.",
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "interfaces": null,
@@ -230,6 +242,18 @@
           "fields": null,
           "inputFields": [
             {
+              "name": "clientMutationId",
+              "description": "A unique identifier for the client performing the mutation.",
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "eventToken",
               "description": null,
               "type": {
@@ -241,7 +265,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             },
             {
               "name": "gameId",
@@ -255,17 +281,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
-            },
-            {
-              "name": "clientMutationId",
-              "description": "A unique identifier for the client performing the mutation.",
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "interfaces": null,
@@ -306,6 +324,18 @@
           "fields": null,
           "inputFields": [
             {
+              "name": "clientMutationId",
+              "description": "A unique identifier for the client performing the mutation.",
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "eventToken",
               "description": null,
               "type": {
@@ -317,17 +347,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
-            },
-            {
-              "name": "clientMutationId",
-              "description": "A unique identifier for the client performing the mutation.",
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "interfaces": null,
@@ -628,7 +650,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             },
             {
               "name": "score",
@@ -642,7 +666,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "interfaces": null,
@@ -680,7 +706,7 @@
               "args": [
                 {
                   "name": "input",
-                  "description": null,
+                  "description": "Parameters for CreateEvent",
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -690,7 +716,9 @@
                       "ofType": null
                     }
                   },
-                  "defaultValue": null
+                  "defaultValue": null,
+                  "isDeprecated": false,
+                  "deprecationReason": null
                 }
               ],
               "type": {
@@ -707,7 +735,7 @@
               "args": [
                 {
                   "name": "input",
-                  "description": null,
+                  "description": "Parameters for CreateGame",
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -717,7 +745,9 @@
                       "ofType": null
                     }
                   },
-                  "defaultValue": null
+                  "defaultValue": null,
+                  "isDeprecated": false,
+                  "deprecationReason": null
                 }
               ],
               "type": {
@@ -734,7 +764,7 @@
               "args": [
                 {
                   "name": "input",
-                  "description": null,
+                  "description": "Parameters for DeleteGame",
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -744,7 +774,9 @@
                       "ofType": null
                     }
                   },
-                  "defaultValue": null
+                  "defaultValue": null,
+                  "isDeprecated": false,
+                  "deprecationReason": null
                 }
               ],
               "type": {
@@ -761,7 +793,7 @@
               "args": [
                 {
                   "name": "input",
-                  "description": null,
+                  "description": "Parameters for DeleteTip",
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -771,7 +803,9 @@
                       "ofType": null
                     }
                   },
-                  "defaultValue": null
+                  "defaultValue": null,
+                  "isDeprecated": false,
+                  "deprecationReason": null
                 }
               ],
               "type": {
@@ -788,7 +822,7 @@
               "args": [
                 {
                   "name": "input",
-                  "description": null,
+                  "description": "Parameters for UpdateEvent",
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -798,7 +832,9 @@
                       "ofType": null
                     }
                   },
-                  "defaultValue": null
+                  "defaultValue": null,
+                  "isDeprecated": false,
+                  "deprecationReason": null
                 }
               ],
               "type": {
@@ -815,7 +851,7 @@
               "args": [
                 {
                   "name": "input",
-                  "description": null,
+                  "description": "Parameters for UpdateGame",
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -825,7 +861,9 @@
                       "ofType": null
                     }
                   },
-                  "defaultValue": null
+                  "defaultValue": null,
+                  "isDeprecated": false,
+                  "deprecationReason": null
                 }
               ],
               "type": {
@@ -842,7 +880,7 @@
               "args": [
                 {
                   "name": "input",
-                  "description": null,
+                  "description": "Parameters for UpdateParticipants",
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -852,7 +890,9 @@
                       "ofType": null
                     }
                   },
-                  "defaultValue": null
+                  "defaultValue": null,
+                  "isDeprecated": false,
+                  "deprecationReason": null
                 }
               ],
               "type": {
@@ -869,7 +909,7 @@
               "args": [
                 {
                   "name": "input",
-                  "description": null,
+                  "description": "Parameters for UpsertTip",
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -879,7 +919,9 @@
                       "ofType": null
                     }
                   },
-                  "defaultValue": null
+                  "defaultValue": null,
+                  "isDeprecated": false,
+                  "deprecationReason": null
                 }
               ],
               "type": {
@@ -965,7 +1007,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             },
             {
               "name": "name",
@@ -979,7 +1023,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "interfaces": null,
@@ -1007,7 +1053,9 @@
                       "ofType": null
                     }
                   },
-                  "defaultValue": null
+                  "defaultValue": null,
+                  "isDeprecated": false,
+                  "deprecationReason": null
                 }
               ],
               "type": {
@@ -1146,7 +1194,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             },
             {
               "name": "score",
@@ -1160,7 +1210,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "interfaces": null,
@@ -1174,6 +1226,18 @@
           "fields": null,
           "inputFields": [
             {
+              "name": "clientMutationId",
+              "description": "A unique identifier for the client performing the mutation.",
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "eventToken",
               "description": null,
               "type": {
@@ -1185,7 +1249,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             },
             {
               "name": "eventDate",
@@ -1199,17 +1265,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
-            },
-            {
-              "name": "clientMutationId",
-              "description": "A unique identifier for the client performing the mutation.",
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "interfaces": null,
@@ -1268,6 +1326,18 @@
           "fields": null,
           "inputFields": [
             {
+              "name": "clientMutationId",
+              "description": "A unique identifier for the client performing the mutation.",
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "eventToken",
               "description": null,
               "type": {
@@ -1279,7 +1349,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             },
             {
               "name": "gameId",
@@ -1293,7 +1365,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             },
             {
               "name": "results",
@@ -1315,17 +1389,9 @@
                   }
                 }
               },
-              "defaultValue": null
-            },
-            {
-              "name": "clientMutationId",
-              "description": "A unique identifier for the client performing the mutation.",
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "interfaces": null,
@@ -1384,6 +1450,18 @@
           "fields": null,
           "inputFields": [
             {
+              "name": "clientMutationId",
+              "description": "A unique identifier for the client performing the mutation.",
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "eventToken",
               "description": null,
               "type": {
@@ -1395,7 +1473,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             },
             {
               "name": "renamingParticipants",
@@ -1413,7 +1493,9 @@
                   }
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             },
             {
               "name": "addingNames",
@@ -1431,7 +1513,9 @@
                   }
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             },
             {
               "name": "deletingIds",
@@ -1449,17 +1533,9 @@
                   }
                 }
               },
-              "defaultValue": null
-            },
-            {
-              "name": "clientMutationId",
-              "description": "A unique identifier for the client performing the mutation.",
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "interfaces": null,
@@ -1526,6 +1602,18 @@
           "fields": null,
           "inputFields": [
             {
+              "name": "clientMutationId",
+              "description": "A unique identifier for the client performing the mutation.",
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "eventToken",
               "description": null,
               "type": {
@@ -1537,7 +1625,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             },
             {
               "name": "results",
@@ -1559,17 +1649,9 @@
                   }
                 }
               },
-              "defaultValue": null
-            },
-            {
-              "name": "clientMutationId",
-              "description": "A unique identifier for the client performing the mutation.",
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "interfaces": null,
@@ -1630,7 +1712,18 @@
               "name": "args",
               "description": null,
               "args": [
-
+                {
+                  "name": "includeDeprecated",
+                  "description": null,
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "Boolean",
+                    "ofType": null
+                  },
+                  "defaultValue": "false",
+                  "isDeprecated": false,
+                  "deprecationReason": null
+                }
               ],
               "type": {
                 "kind": "NON_NULL",
@@ -1661,6 +1754,20 @@
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "isRepeatable",
+              "description": null,
+              "args": [
+
+              ],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
                 "ofType": null
               },
               "isDeprecated": false,
@@ -1887,6 +1994,12 @@
               "description": "Location adjacent to an input object field definition.",
               "isDeprecated": false,
               "deprecationReason": null
+            },
+            {
+              "name": "VARIABLE_DEFINITION",
+              "description": "Location adjacent to a variable definition.",
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "possibleTypes": null
@@ -1977,7 +2090,18 @@
               "name": "args",
               "description": null,
               "args": [
-
+                {
+                  "name": "includeDeprecated",
+                  "description": null,
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "Boolean",
+                    "ofType": null
+                  },
+                  "defaultValue": "false",
+                  "isDeprecated": false,
+                  "deprecationReason": null
+                }
               ],
               "type": {
                 "kind": "NON_NULL",
@@ -2109,6 +2233,20 @@
               "deprecationReason": null
             },
             {
+              "name": "deprecationReason",
+              "description": null,
+              "args": [
+
+              ],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "description",
               "description": null,
               "args": [
@@ -2118,6 +2256,24 @@
                 "kind": "SCALAR",
                 "name": "String",
                 "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "isDeprecated",
+              "description": null,
+              "args": [
+
+              ],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -2171,6 +2327,20 @@
           "name": "__Schema",
           "description": "A GraphQL Schema defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, as well as the entry points for query, mutation, and subscription operations.",
           "fields": [
+            {
+              "name": "description",
+              "description": null,
+              "args": [
+
+              ],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
             {
               "name": "directives",
               "description": "A list of all directives supported by this server.",
@@ -2308,7 +2478,9 @@
                     "name": "Boolean",
                     "ofType": null
                   },
-                  "defaultValue": "false"
+                  "defaultValue": "false",
+                  "isDeprecated": false,
+                  "deprecationReason": null
                 }
               ],
               "type": {
@@ -2339,7 +2511,9 @@
                     "name": "Boolean",
                     "ofType": null
                   },
-                  "defaultValue": "false"
+                  "defaultValue": "false",
+                  "isDeprecated": false,
+                  "deprecationReason": null
                 }
               ],
               "type": {
@@ -2362,7 +2536,18 @@
               "name": "inputFields",
               "description": null,
               "args": [
-
+                {
+                  "name": "includeDeprecated",
+                  "description": null,
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "Boolean",
+                    "ofType": null
+                  },
+                  "defaultValue": "false",
+                  "isDeprecated": false,
+                  "deprecationReason": null
+                }
               ],
               "type": {
                 "kind": "LIST",
@@ -2469,6 +2654,20 @@
               },
               "isDeprecated": false,
               "deprecationReason": null
+            },
+            {
+              "name": "specifiedByURL",
+              "description": null,
+              "args": [
+
+              ],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "inputFields": null,
@@ -2560,7 +2759,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ]
         },
@@ -2585,7 +2786,9 @@
                   "ofType": null
                 }
               },
-              "defaultValue": null
+              "defaultValue": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ]
         },
@@ -2594,7 +2797,9 @@
           "description": "Marks an element of a GraphQL schema as no longer supported.",
           "locations": [
             "FIELD_DEFINITION",
-            "ENUM_VALUE"
+            "ENUM_VALUE",
+            "ARGUMENT_DEFINITION",
+            "INPUT_FIELD_DEFINITION"
           ],
           "args": [
             {
@@ -2605,7 +2810,9 @@
                 "name": "String",
                 "ofType": null
               },
-              "defaultValue": "\"No longer supported\""
+              "defaultValue": "\"No longer supported\"",
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ]
         }
