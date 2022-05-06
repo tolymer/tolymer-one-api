@@ -13,4 +13,4 @@ RUN bundle config set --local deployment 'true' && \
     bundle install -j4
 COPY . /app
 
-CMD ["bin/rails", "server", "-b", "0.0.0.0", "-p", "8080"]
+CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
