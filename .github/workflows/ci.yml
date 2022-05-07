@@ -21,7 +21,7 @@ jobs:
       - run:
           bundle exec rails db:create
           bundle exec rails ridegepole:apply
-      - run: bundle exec rspec
+          bundle exec rspec
         env:
           RAILS_ENV: test
           DATABASE_URL: 'mysql2://mysql/tolymer_one_test'
