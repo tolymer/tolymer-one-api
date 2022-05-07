@@ -24,4 +24,3 @@ jobs:
           bundle exec rspec
         env:
           RAILS_ENV: test
-          DATABASE_URL: 'mysql2://mysql/tolymer_one_test'
