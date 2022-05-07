@@ -75,11 +75,4 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
-  config.middleware.insert_before 0, Rack::Cors do
-    allow do
-      origins "*"
-      resource "/graphql", headers: :any, methods: [:post]
-    end
-  end
 end
