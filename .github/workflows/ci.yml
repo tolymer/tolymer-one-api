@@ -18,7 +18,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-      - run:
+      - run: |
           bundle exec rails db:create
           bundle exec rails ridegepole:apply
           bundle exec rspec
