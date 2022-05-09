@@ -178,7 +178,7 @@ input ParticipantRenameInput {
 }
 
 type Query {
-  event(token: String!): Event!
+  event(token: String!): Event
 }
 
 type Tip {
