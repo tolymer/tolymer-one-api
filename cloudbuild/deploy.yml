@@ -5,6 +5,7 @@ steps:
       - build
       - -t
       - $_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA
+      - -t
       - $_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:latest
       - '.'
 
