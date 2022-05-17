@@ -1,0 +1,17 @@
+steps:
+  - id: Run HealthCheckBatch
+    name: gcr.io/cloud-builders/docker
+    args:
+      - run
+      - asia.gcr.io/tolymer/tolymer-one-api:latest
+      - bundle
+      - exec
+      - rails
+      - runner
+      - HealthCheckBatch.run
+
+options:
+  substitutionOption: ALLOW_LOOSE
+
+tags:
+  - tolymer-one-api

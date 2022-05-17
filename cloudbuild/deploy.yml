@@ -23,16 +23,12 @@ steps:
       - '$_SERVICE_NAME'
       - '--platform=managed'
       - '--image=$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA'
-      - '--labels=managed-by=gcp-cloud-build-deploy-cloud-run,commit-sha=$COMMIT_SHA,gcb-build-id=$BUILD_ID,gcb-trigger-id=$_TRIGGER_ID,$_LABELS'
       - '--region=$_DEPLOY_REGION'
       - '--quiet'
       - '--set-secrets'
       - 'DATABASE_URL=projects/${PROJECT_NUMBER}/secrets/DATABASE_URL:latest,SECRET_KEY_BASE=projects/${PROJECT_NUMBER}/secrets/SECRET_KEY_BASE:latest'
 
 substitutions:
-  _LABELS: gcb-trigger-id=41ea1912-295d-426e-96f3-8d615de115e5
-  _TRIGGER_ID: 41ea1912-295d-426e-96f3-8d615de115e5
-  _PLATFORM: managed
   _SERVICE_NAME: tolymer-one-api
   _DEPLOY_REGION: asia-northeast1
   _GCR_HOSTNAME: asia.gcr.io
@@ -45,6 +41,4 @@ availableSecrets:
 images:
   - "$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA"
 tags:
-  - gcp-cloud-build-deploy-cloud-run
-  - gcp-cloud-build-deploy-cloud-run-managed
   - tolymer-one-api

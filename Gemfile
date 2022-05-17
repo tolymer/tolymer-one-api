@@ -8,6 +8,7 @@ gem 'puma'
 gem 'graphql_playground-rails'
 gem 'rack-cors'
 gem 'bootsnap', require: false
+gem 'httparty', require: false
 
 group :development, :test do
   gem 'pry-byebug'
